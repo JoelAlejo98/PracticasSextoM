@@ -18,14 +18,18 @@ if (trim($_POST['txt_user']) != "" && ($_POST['txt_pass']) != "") {
     
     if (@$rol) {
         switch ($rol) {
-            case ("1"):echo "Administrador");
+            case ("1") :
+                echo "Administrador";
                 break;
 
-            case ("2"):echo  "Invitado");
+            case ("2") :
+                echo  "Invitado";
                 break;
         }
     }
-} else {
-    echo echo "Error";
-}
+    } 
+    else 
+    {
+    echo "Error al conectar base de datos";
+    }
 ?>
