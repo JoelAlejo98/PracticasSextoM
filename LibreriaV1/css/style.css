@@ -1,0 +1,17 @@
+.presentacion {
+    background: url('https://p4.wallpaperbetter.com/wallpaper/79/283/750/studying-the-bible-studying-book-bible-wallpaper-preview.jpg');
+    background-size: cover;
+   
+}
+
+body {
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+.small:hover {
+    color: #000046;
+}

@@ -19,59 +19,53 @@ and open the template in the editor.
   <!-- Custom fonts for this template-->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cantata+One&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <!--My style-->
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
 
-<body class="bg-gradient-primary">
+<body >
 
-  <div class="container">
-
-    <!-- Outer Row -->
-    <div class="row justify-content-center">
-
-      <div class="col-xl-10 col-lg-12 col-md-9">
-
-        <div class="card o-hidden border-0 shadow-lg my-5">
-          <div class="card-body p-0">
-            <!-- Nested Row within Card Body -->
-            <div class="row">
-             
-              <div class="col-lg-6">
+  <div class=" container col-md-12">
+    <div class="row d-flex justify-content-center mt-4 col-md-12">
+      <div class="card-group mt-4 col-md-10">
+        <div class="presentacion card">
+          
+        </div>
+        <div class="card">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-4">Ingreso al Sistema</h1>
+                    <h1 class="h4 text-gray-900 mb-4" style="font-weight:bold;font-family: 'Cantata One', serif;font-size:25px;">INGRESO AL SISTEMA</h1>
                   </div>
                   <form class="user" action="controladores/acceso.php" method="POST">
-                    <div class="form-group">
-                      <input type="user" class="form-control form-control-user" id="txt_user" name='txt_user' placeholder="Usuario">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="txt_pass" name='txt_pass' placeholder="Password">
-                    </div>
-                    </div>
+                    <div class="form-group mt-4">
+                      <input type="user" class="mb-4 form-control form-control-user" id="txt_user" name='txt_user' placeholder="Usuario" required>
+                    
+                
+                      <input type="password" class="mb-4 form-control form-control-user" id="txt_pass" name='txt_pass' placeholder="Password" required>
+          
+                    
                     <input type="submit" name="btnlogin" value="Login" class="btn btn-primary btn-user btn-block">
-                      
+                    </div>
                     </a>
                     <hr>
                   </form>
                   <hr>
                   <div class="text-center">
-                    <a class="small" href="forgot-password.html">Recordar Contrasena</a>
+                  <p><i class="fa fa-facebook-official" aria-hidden="true"></i><i class="ml-2 fa fa-twitter-square" aria-hidden="true"></i><i class="ml-2 fa fa-instagram" aria-hidden="true"></i></p>
+                    <a class="small" href="forgot-password.html" style="font-weight:bold;font-size:14px;text-decoration:none;">Recordar Contrasena</a>
                   </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                
         </div>
-
       </div>
-
     </div>
-
   </div>
 
   <!-- Bootstrap core JavaScript-->
