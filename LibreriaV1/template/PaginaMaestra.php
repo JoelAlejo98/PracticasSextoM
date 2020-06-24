@@ -2,13 +2,13 @@
 session_start();
 include 'conexion.php';
 $nomUsu=$_SESSION['usuario'];
-    $sql = "select * from usuarios where usuario='$nomUsu'";
+    $sql = "select * from usuario where us_user='$nomUsu'";
     $sqlQuery = $pdo->prepare($sql);
     $sqlQuery->execute(); 
     $resultado = $sqlQuery->fetchAll();
     foreach($resultado as $res){
-    $nombre = $res['nombre'];
-    $rol = $res['idrol'];
+    $nombre = $res['us_user'];
+    $rol = $res['tp_id_tipo_usuario'];
     }
 ?>
 
