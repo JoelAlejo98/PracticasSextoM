@@ -46,16 +46,11 @@ and open the template in the editor.
                   </div>
                   <form class="user" action="controladores/acceso.php" method="POST">
                     <div class="form-group">
-                      <input type="user" class="form-control form-control-user" id="txt_user" name='txt_user' placeholder="Ingresa tu Usuario">
+                      <input type="user" class="form-control form-control-user" id="txt_user" name='txt_user' placeholder="Usuario">
                     </div>
                     <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="txt_pass" name='txt_pass' placeholder="Contrasena">
+                      <input type="password" class="form-control form-control-user" id="txt_pass" name='txt_pass' placeholder="Password">
                     </div>
-                    <div class="form-group">
-                      <div class="custom-control custom-checkbox small">
-                        <input type="checkbox" class="custom-control-input" id="customCheck">
-                        <label class="custom-control-label" for="customCheck">Recuerdame</label>
-                      </div>
                     </div>
                     <input type="submit" name="btnlogin" value="Login" class="btn btn-primary btn-user btn-block">
                       
