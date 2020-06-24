@@ -18,20 +18,14 @@ if (trim($_POST['txt_user']) != "" && ($_POST['txt_pass']) != "") {
     
     if (@$rol) {
         switch ($rol) {
-            case ("1"):echo "<script>alert('Bienvenido Administrador');
-                             location.href='../inicio.php';</script>";
+            case ("1"):echo "Administrador");
                 break;
 
-            case ("2"):echo  "<script>alert('Bienvenido Invitado');
-                              location.href='../inicio.php';</script>";
+            case ("2"):echo  "Invitado");
                 break;
         }
-    } else {
-        echo "<script>alert('Usuario/Password incorrectos');
-        location.href='../index.php';</script>" ;
     }
 } else {
-    echo "<script>alert('Datos no Ingresados');
-    location.href='../index.php';</script>" ;
+    echo echo "Error";
 }
 ?>
