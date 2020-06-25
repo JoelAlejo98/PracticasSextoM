@@ -89,10 +89,14 @@ if (isset($_SESSION['usuario'])) {
                     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Custom Utilities:</h6>
-                            <a class="collapse-item" href="editorial.php">Editorial</a>
-                            <a class="collapse-item" href="libro.php">Libro</a>
-                            <a class="collapse-item" href=autor.php>Autor</a>
-                            <a class="collapse-item" href="ventas.php">ventas</a>
+                            <a class="collapse-item" href="ListarEditorial.php">Editorial</a>
+                            <a class="collapse-item" href="ListarLibro.php">Libro</a>
+                            <a class="collapse-item" href=ListarAutor.php>Autor</a>
+                            <a class="collapse-item" href="ListarLibroAutor.php">Libro-Autor</a>
+                            <a class="collapse-item" href="ListarVentas.php">Ventas</a>
+                            <a class="collapse-item" href="ListarDetalleVentas.php">Detalle-Ventas</a>
+                            <a class="collapse-item" href="ListarTipoUsuario.php">Tipo de Usuarios</a>
+                            <a class="collapse-item" href="ListarUsuarios.php">Usuarios</a>
                         </div>
                     </div>
                 </li>
