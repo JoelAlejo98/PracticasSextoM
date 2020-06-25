@@ -7,7 +7,7 @@ $id_libro=$_GET['cod'];
 <div id="page-wrapper">
   <div class="row">
     <div class="col-lg-12 mb-4">
-      <h1 class="page-header">Modificar precio Venta</h1>
+      <h1 class="page-header">Modificar precio Venta (Prueba)</h1>
     </div>
     <div>
       <form action="controladores/preciodeventa.php" method="POST">

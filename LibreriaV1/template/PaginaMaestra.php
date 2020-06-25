@@ -93,6 +93,7 @@ if (isset($_SESSION['usuario'])) {
                             <a class="collapse-item" href="ListarLibro.php">Libro</a>
                             <a class="collapse-item" href=ListarAutor.php>Autor</a>
                             <a class="collapse-item" href="ListarLibroAutor.php">Libro-Autor</a>
+                            <a class="collapse-item" href="modificarpreciovent.php">Modificar Precio de Libros</a>
                             <a class="collapse-item" href="ListarVentas.php">Ventas</a>
                             <a class="collapse-item" href="ListarDetalleVentas.php">Detalle-Ventas</a>
                             <a class="collapse-item" href="ListarTipoUsuario.php">Tipo de Usuarios</a>
