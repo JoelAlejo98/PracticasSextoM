@@ -35,7 +35,7 @@ $resultado =$sqlQuery->fetchAll();//almacenamos los datos de la consulata
                 <td><?php echo $res ['ed_id_editorial'];?></td>
                 <td><?php echo $res ['ed_nombre'];?></td>
                 <td><?php echo $res ['ed_estado'] == 'A'? "Activo" : "Inactivo";?></td>
-                <td align="center"><a href="" title="Modificar"><i class="fa fa-edit fa-fw"></i></a>
+                <td align="center"><a href="ModificarEditorial.php?ed_id_editorial=<?php echo $res['ed_id_editorial'];?>" title="Modificar"><i class="fa fa-edit fa-fw"></i></a>
                 <a href="EliminarEditorial.php?cod=<?php echo $res['ed_id_editorial'];?>" title="Eliminar"><i class="fa fa-times fa-fw"></i></a></td>
               </tr>
                 <?php   }?>
