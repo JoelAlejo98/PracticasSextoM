@@ -42,7 +42,13 @@ $resultado =$sqlQuery->fetchAll();//almacenamos los datos de la consulata
                 <td><?php echo $res ['li_categoria'];?></td>
                 <td><?php echo $res ['li_estado'] == 'A'? "Activo" : "Inactivo";?></td>
                 <td align="center"><a href="" title="Modificar"><i class="fa fa-edit fa-fw"></i></a>
+<<<<<<< HEAD
                 <a href="EliminarLibro.php?cod=<?php echo $res['li_id_libro'];?>" title="Eliminar"><i class="fa fa-times fa-fw"></i></a></td>
+=======
+                <a href="Controladores/Usuario.php?cod=<?php echo $res['us_id_usuario'];?>" title="Eliminar"><i class="fa fa-times fa-fw"></i></a></td>
+                <td align="center">
+                <a href="modificarpreciovent.php?cod=<?php echo $res['li_id_libro'];?>" title="modificar"><i class="fa fa-times fa-fw"></i></a></td>
+>>>>>>> 8a8098dadea499f04cc4d8fff13b3a4be63b0751
               </tr>
                 <?php   }?>
             </table>
