@@ -1,7 +1,7 @@
 <?php
 
 include "template/PaginaMaestra.php";
-$sql ="select * from libro ";
+$sql ="select * from libro where li_estado = 'A'";
 $sqlQuery = $pdo->prepare($sql);//preparamos la consulta sql
 $sqlQuery ->execute();//ejecutamos esa consulta
 $resultado =$sqlQuery->fetchAll();//almacenamos los datos de la consulata
@@ -42,7 +42,7 @@ $resultado =$sqlQuery->fetchAll();//almacenamos los datos de la consulata
                 <td><?php echo $res ['li_categoria'];?></td>
                 <td><?php echo $res ['li_estado'] == 'A'? "Activo" : "Inactivo";?></td>
                 <td align="center"><a href="" title="Modificar"><i class="fa fa-edit fa-fw"></i></a>
-                <a href="Controladores/Usuario.php?cod=<?php echo $res['us_id_usuario'];?>" title="Eliminar"><i class="fa fa-times fa-fw"></i></a></td>
+                <a href="EliminarLibro.php?cod=<?php echo $res['li_id_libro'];?>" title="Eliminar"><i class="fa fa-times fa-fw"></i></a></td>
               </tr>
                 <?php   }?>
             </table>

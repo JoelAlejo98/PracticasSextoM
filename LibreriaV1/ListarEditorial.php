@@ -1,7 +1,7 @@
 <?php
 
 include "template/PaginaMaestra.php";
-$sql ="select * from editorial ";
+$sql ="select * from editorial where ed_estado ='A' ";
 $sqlQuery = $pdo->prepare($sql);//preparamos la consulta sql
 $sqlQuery ->execute();//ejecutamos esa consulta
 $resultado =$sqlQuery->fetchAll();//almacenamos los datos de la consulata
@@ -36,7 +36,7 @@ $resultado =$sqlQuery->fetchAll();//almacenamos los datos de la consulata
                 <td><?php echo $res ['ed_nombre'];?></td>
                 <td><?php echo $res ['ed_estado'] == 'A'? "Activo" : "Inactivo";?></td>
                 <td align="center"><a href="" title="Modificar"><i class="fa fa-edit fa-fw"></i></a>
-                <a href="Controladores/Usuario.php?cod=<?php echo $res['us_id_usuario'];?>" title="Eliminar"><i class="fa fa-times fa-fw"></i></a></td>
+                <a href="EliminarEditorial.php?cod=<?php echo $res['ed_id_editorial'];?>" title="Eliminar"><i class="fa fa-times fa-fw"></i></a></td>
               </tr>
                 <?php   }?>
             </table>

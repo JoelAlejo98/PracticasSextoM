@@ -35,14 +35,16 @@ $resultado =$sqlQuery->fetchAll();//almacenamos los datos de la consulata
               </tr>
               <?php  foreach ($resultado as $res ) {?>
                <tr>
-                <td><?php echo $res ['us_id_usuario'];?></td>
+              
+                <td name="codigo"><?php echo $res ['us_id_usuario'];?></td>
                 <td><?php echo $res ['us_nombre'];?></td>
                 <td><?php echo $res ['us_apellido'];?></td>
                 <td><?php echo $res ['us_user'];?></td>
                 <td><?php echo $res ['tp_id_tipo_usuario'] == '1'? "Administrador" : "Invitado";?></td>
                 <td><?php echo $res ['us_estado'] == 'A'? "Activo" : "Inactivo";?></td>
                 <td align="center"><a href="" title="Modificar"><i class="fa fa-edit fa-fw"></i></a>
-                <a href="Controladores/Usuario.php?cod=<?php echo $res['us_id_usuario'];?>" title="Eliminar"><i class="fa fa-times fa-fw"></i></a></td>
+                <a href="EliminarUsuarios.php?cod=<?php echo $res['us_id_usuario']?>" title="Eliminar"><i class="fa fa-times fa-fw"></i></a></td>
+                
               </tr>
                 <?php   }?>
             </table>
