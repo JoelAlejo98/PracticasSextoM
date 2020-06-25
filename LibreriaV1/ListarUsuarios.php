@@ -13,7 +13,7 @@ $resultado =$sqlQuery->fetchAll();//almacenamos los datos de la consulata
                 </div>
                   <div class="col-lg-12">
                     <div>
-                      <form action="Usuario.php" method="POST">
+                        <form action="Usuario.php" method="POST">
                          <input type="submit" name="BtnCrear" value="Crear" class="btn-primary" />
                       </form>
                     </div>
@@ -41,7 +41,7 @@ $resultado =$sqlQuery->fetchAll();//almacenamos los datos de la consulata
                 <td><?php echo $res ['us_apellido'];?></td>
                 <td><?php echo $res ['us_user'];?></td>
                 <td><?php echo $res ['tp_id_tipo_usuario'] == '1'? "Administrador" : "Invitado";?></td>
-                <td><?php echo $res ['us_estado'] == 'A'? "Activo" : "Inactivo";?></td>
+                <td><?php echo $res ['us_estado'] == 'A'? "Activo" : "Inactivo";?></td
                 <td align="center"><a href="" title="Modificar"><i class="fa fa-edit fa-fw"></i></a>
                 <a href="EliminarUsuarios.php?cod=<?php echo $res['us_id_usuario']?>" title="Eliminar"><i class="fa fa-times fa-fw"></i></a></td>
                 

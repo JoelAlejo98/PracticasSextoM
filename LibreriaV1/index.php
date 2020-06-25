@@ -50,6 +50,7 @@ and open the template in the editor.
                 
                       <input type="password" class="mb-4 form-control form-control-user" id="txt_pass" name='txt_pass' placeholder="Password" required>
                     <input type="submit" name="btnlogin" value="Login" class="btn btn-primary btn-user btn-block">
+                    
                     </div>
                     </a>
                     <hr>
