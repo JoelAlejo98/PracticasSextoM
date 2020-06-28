@@ -97,7 +97,7 @@ if($cod==""){?>
 
 <div class="">
 <div class="card">
-  <h5 class="card-header">Modificar Usuario</h5>
+  <h5 class="card-header">Modificar</h5>
   <div class="card-body">
     <form action="Controladores/Usuario.php" method="POST">
     <div class="row">
