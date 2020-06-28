@@ -7,7 +7,7 @@ if($cod==""){?>
 
 <div class="">
 <div class="card">
-  <h5 class="card-header">Crear Usuarios</h5>
+  <h5 class="card-header">Crear Usuario</h5>
   <div class="card-body">
     <form action="Controladores/Usuario.php" method="post">
     <div class="row">
